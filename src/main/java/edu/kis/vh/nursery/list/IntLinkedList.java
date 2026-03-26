@@ -39,6 +39,7 @@ public class IntLinkedList {
         return last.getValue();
     }
 
+    // TODO: needs refactoring shouldn't have 300 lines :)
     public int pop() {
         if (isEmpty()) {
             return EMPTY_RETURN_VALUE;
