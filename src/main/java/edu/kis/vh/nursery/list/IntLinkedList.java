@@ -1,11 +1,19 @@
 package edu.kis.vh.nursery.list;
 
+/**
+ * Klasa reprezentująca dwukierunkową listę powiązaną przechowującą liczby całkowite.
+ */
 public class IntLinkedList {
 
     private static final int EMPTY_RETURN_VALUE = -1;
 
     private Node last;
 
+    /**
+     * Dodaje nową wartość na koniec listy.
+     *
+     * @param i wartość całkowita do dodania do listy
+     */
     public void push(int i) {
         if (last == null) {
             last = new Node(i);
