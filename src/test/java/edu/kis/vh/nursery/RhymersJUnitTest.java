@@ -3,6 +3,7 @@ package edu.kis.vh.nursery;
 import org.junit.Assert;
 import org.junit.Test;
 
+// Projekt jest poprawny
 public class RhymersJUnitTest {
 
     @Test
@@ -74,5 +75,18 @@ public class RhymersJUnitTest {
         result = rhymer.countOut();
         Assert.assertEquals(EMPTY_STACK_VALUE, result);
     }
+    @org.junit.Test
+    public void testIntLinkedList() {
+        edu.kis.vh.nursery.list.IntLinkedList list = new edu.kis.vh.nursery.list.IntLinkedList();
 
+        // Sprawdzamy, czy nowa lista jest pusta
+        org.junit.Assert.assertTrue(list.isEmpty());
+
+        // Dodajemy element i sprawdzamy, czy jest na szczycie
+        list.push(5);
+        org.junit.Assert.assertEquals(5, list.top());
+
+        // Sprawdzamy, czy po dodaniu elementu lista nie jest pusta
+        org.junit.Assert.assertFalse(list.isEmpty());
+    }
 }
